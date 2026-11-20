@@ -8,13 +8,13 @@
         <h3>ARVIND-26017022</h3>
         <form method="POST">
             {%csrf_token%}
-            <h3>Initial Customer:</h3>
+            <label>Initial Customer:</label>
             <input type="number" name='Initialcust' value="{{Initialcust}}"><br><br>
-            <h3>Current Customer:</h3>
+            <label>Current Customer:</label>
             <input type="number" name="Presentcust" value="{{Presentcust}}"><br><br>
-            <input type="submit">
-            <input type="reset">
-            <h3>Churn Rate:{{churn_rate}}%</h3>
+            <input type="submit" value="calculate">
+            <input type="reset"><br><br>
+            <label>Churn Rate:{{churn_rate}}%</label>
         </form>
     </body>
 </html>
