@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            CHURN_CALCULATOR
+        </title>
+    </head>
+    <body>
+        <h3>ARVIND-26017022</h3>
+        <form method="POST">
+            {%csrf_token%}
+            <h3>Initial Customer:</h3>
+            <input type="number" name='Initialcust' value="{{Initialcust}}"><br><br>
+            <h3>Current Customer:</h3>
+            <input type="number" name="Presentcust" value="{{Presentcust}}"><br><br>
+            <input type="submit">
+            <input type="reset">
+            <h3>Churn Rate:{{churn_rate}}%</h3>
+        </form>
+    </body>
+</html>
